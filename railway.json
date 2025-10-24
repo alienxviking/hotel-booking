@@ -1,12 +1,14 @@
-# Railway deployment configuration
-[build]
-builder = "nixpacks"
-
-[deploy]
-startCommand = "npm start"
-healthcheckPath = "/"
-healthcheckTimeout = 100
-restartPolicyType = "on_failure"
-
-[env]
-NODE_ENV = "production"
+{
+  "build": {
+    "builder": "nixpacks"
+  },
+  "deploy": {
+    "startCommand": "cd server && npm start",
+    "healthcheckPath": "/",
+    "healthcheckTimeout": 100,
+    "restartPolicyType": "on_failure"
+  },
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
