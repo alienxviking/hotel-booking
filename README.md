@@ -1,78 +1,110 @@
-Hotel Booking System
-A full-stack hotel booking application supporting hotel room search, reservation, and management.
-Live Backend: hotel-booking-backend-three-xi.vercel.app
-Live Frontend: https://hotel-booking-frontend-plum.vercel.app/
+# 🏨 Hotel Booking System  
+*A modern full-stack hotel booking platform for seamless stays and stress-free management.*
 
-Features
-User authentication and authorization
+🔗 **Live Demo**  
+**Frontend:** [hotel-booking-frontend-plum.vercel.app](https://hotel-booking-frontend-plum.vercel.app)  
+**Backend:** [hotel-booking-backend-three-xi.vercel.app](https://hotel-booking-backend-three-xi.vercel.app)
 
-Hotel and room listing
+---
 
-Search and filter for available rooms
+## 🚀 Features
 
-Room booking/reservation management
+✅ User authentication & registration  
+🏠 Browse hotels & rooms  
+🔍 Advanced search & filters  
+🛏 Seamless room booking flow  
+📋 Booking management dashboard  
+🛠 Admin panel for hotels & rooms  
+💳 Payment integration *(if implemented)*  
 
-Booking history dashboard for users
+---
 
-Payment integration 
+## 🛠 Tech Stack
 
-Admin panel for hotel management
+| Part | Technologies |
+|:--|:--|
+| **Frontend** | React.js / Next.js, Tailwind CSS or MUI |
+| **Backend** | Node.js, Express.js |
+| **Database** | MongoDB / PostgreSQL |
+| **Hosting** | Vercel (Frontend & Backend) |
 
-Tech Stack
-Backend
-Node.js, Express.js
+---
 
-Database: (Specify, e.g., MongoDB, PostgreSQL)
+## 📁 Project Structure
 
-Deployment: Vercel
+```
+hotel-booking/
+├── backend/
+│   ├── src/
+│   ├── package.json
+│   └── .env.example
+└── frontend/
+    ├── src/
+    ├── package.json
+    └── .env.example
+```
 
-Languages: JavaScript (98.9%)
+---
 
-Frontend
-Framework: (Specify, e.g., React, Next.js)
+## ⚡️ Getting Started
 
-Design Libraries: (Specify, e.g., Material-UI, Tailwind CSS)
-
-Deployment: (Specify, e.g., Vercel, Netlify)
-
-Languages: JavaScript/TypeScript
-
-Getting Started
-Prerequisites
-Node.js (v14+ recommended)
-
-npm/yarn for both backend & frontend
-
-Database instance (details as per backend setup)
-
-Installation
-Clone the Repository
-bash
+### 1️⃣ Clone the Repository
+```bash
 git clone https://github.com/alienxviking/hotel-booking.git
-Backend Setup
-bash
-cd hotel-booking/backend
+cd hotel-booking
+```
+
+### 2️⃣ Backend Setup
+```bash
+cd backend
 npm install
-cp .env.example .env
-# Edit .env with database URI and secrets
+cp .env.example .env   # Fill in required environment details
 npm start
-Frontend Setup
-bash
-cd hotel-booking/frontend
+```
+
+### 3️⃣ Frontend Setup
+```bash
+cd frontend
 npm install
 npm start
-The frontend server should run on http://localhost:3000 (or specified port).
+```
 
-API Reference
-Method	Endpoint	Description
-GET	/rooms	List all available rooms
-POST	/booking	Create a new booking
-GET	/bookings	Get user bookings
-POST	/auth/login	User login
-...	...	...
-Add or update based on your actual endpoints.
+The app will be live at 👉 **http://localhost:3000**
 
-Deployment
-Backend: hotel-booking-backend-three-xi.vercel.app
+---
 
-Frontend: https://hotel-booking-frontend-plum.vercel.app/
+## 📝 API Overview
+
+| Method | Endpoint | Description |
+|:--|:--|:--|
+| **GET** | `/rooms` | List all available rooms |
+| **POST** | `/booking` | Create a new booking |
+| **GET** | `/bookings` | Get user bookings |
+| **POST** | `/auth/login` | User login |
+| ... | ... | ... |
+
+---
+
+## 👨‍💻 Contributing
+
+Contributions, issues, and feature requests are welcome! 💬  
+Feel free to **fork** the repo and open a **pull request** or **issue**.
+
+```bash
+# Example contribution flow
+git checkout -b feature/amazing-feature
+git commit -m "Add amazing feature"
+git push origin feature/amazing-feature
+```
+
+---
+
+## 📄 License
+
+Licensed under the **MIT License**.  
+Feel free to use and modify this project for personal or commercial use.
+
+---
+
+⭐ **If you like this project, give it a star on GitHub!**  
+It helps others discover it and keeps the motivation high. 🌟
